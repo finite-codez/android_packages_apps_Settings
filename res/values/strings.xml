@@ -585,9 +585,9 @@
     <string name="remove">Remove</string>
 
     <!-- Title of the Settings activity shown within the application itself. -->
-    <string name="settings_label">Settings</string>
+    <string name="settings_label">Nutcase</string>
     <!-- Title of the Settings activity shown in the Launcher. [CHAR LIMIT=20] -->
-    <string name="settings_label_launcher">Settings</string>
+    <string name="settings_label_launcher">Nutcase</string>
     <!-- Label for option to select a settings panel as a shortcut -->
     <string name="settings_shortcut">Settings shortcut</string>
     <!-- Wireless controls settings screen, setting check box label -->
@@ -788,7 +788,7 @@
     <!-- Introduction detail message shown in face enrollment dialog, when face unlock is disabled by device admin [CHAR LIMIT=NONE] -->
     <string name="security_settings_face_enroll_introduction_message_unlock_disabled">Use your face to unlock your phone or approve purchases.\n\nNote: You can\u2019t use your face to unlock this device. For more information, contact your organization\u2019s admin.</string>
     <!-- Introduction detail message shown in face enrollment screen in setup wizard. [CHAR LIMIT=NONE] -->
-    <string name="security_settings_face_enroll_introduction_message_setup">Use your face to unlock your phone, authorize purchases, or sign in to apps</string>
+    <string name="security_settings_face_enroll_introduction_message_setup">Use your face to unlock your phone, authorize purchases, apps and more.</string>
     <!-- Title of a section on the face enrollment introduction page that provides additional information. [CHAR LIMIT=40] -->
     <string name="security_settings_face_enroll_introduction_info_title"></string>
     <!-- Message on the face enrollment introduction page that provides information about glasses. [CHAR LIMIT=NONE] -->
@@ -1177,7 +1177,7 @@
     <!-- Message read to a11y users when UDFPS enrollment progress is made. The number is from 0 to 100. [CHAR LIMIT=NONE]-->
     <string name="security_settings_udfps_enroll_progress_a11y_message">Enrolling fingerprint <xliff:g id="percentage" example="10">%d</xliff:g> percent</string>
     <!-- Title shown in fingerprint enrollment dialog once enrollment is completed [CHAR LIMIT=29] -->
-    <string name="security_settings_fingerprint_enroll_finish_title">Fingerprint added</string>
+    <string name="security_settings_fingerprint_enroll_finish_title">Fingerprint added!</string>
     <!-- Key for require screen on to auth toggle shown in fingerprint enrollment dialog once enrollment is completed. [CHAR LIMIT=NONE] -->
     <string name="security_settings_require_screen_on_to_auth_key" translatable="false">security_settings_require_screen_on_to_auth</string>
     <!-- Title for require screen on to auth toggle shown in fingerprint enrollment dialog once enrollment is completed. [CHAR LIMIT=NONE] -->
@@ -1187,7 +1187,7 @@
     <!-- Description for require screen on to auth toggle shown in fingerprint enrollment dialog once enrollment is completed. [CHAR LIMIT=NONE] -->
     <string name="security_settings_require_screen_on_to_auth_keywords">Screen, Unlock</string>
     <!-- Button text to skip enrollment of fingerprint [CHAR LIMIT=40] -->
-    <string name="security_settings_fingerprint_enroll_enrolling_skip">Do it later</string>
+    <string name="security_settings_fingerprint_enroll_enrolling_skip">Do it later.</string>
     <!-- Accessibility message for fingerprint enrollment asking the user to place the tip of their finger on the fingerprint sensor [CHAR LIMIT=NONE] -->
     <string name="security_settings_udfps_tip_fingerprint_help">Lift, then touch again</string>
     <!-- Accessibility message for fingerprint enrollment asking the user to place the sides of their finger on the fingerprint sensor [CHAR LIMIT=NONE] -->
