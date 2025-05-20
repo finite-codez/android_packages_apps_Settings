@@ -21,10 +21,11 @@
     android:key="top_level_settings">
 
     <Preference
-        android:key="slateos_tile"
-        android:title="SlateOS"
-        android:summary="Customize your experience"
-        android:icon="@drawable/ic_settings_about" />
+      android:key="slateos_tile"
+      android:title="@string/slateos_title"
+      android:summary="@string/slateos_summary"
+      android:icon="@drawable/ic_settings_slateos"
+      android:order="90" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
