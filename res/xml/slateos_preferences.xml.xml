@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="SlateOS Customizations" />
+
+    <Preference
+        android:key="slateos_version"
+        android:title="SlateOS Version"
+        android:summary="v1.0.0"
+        android:icon="@drawable/ic_info_outline" />
+
+    <Preference
+        android:key="slateos_updates"
+        android:title="Check for Updates"
+        android:summary="Coming Soon"
+        android:icon="@drawable/ic_system_update" />
+
+    <Preference
+        android:key="slateos_feedback"
+        android:title="Send Feedback"
+        android:summary="Let us know what you think"
+        android:icon="@drawable/ic_feedback" />
+
+</PreferenceScreen>
