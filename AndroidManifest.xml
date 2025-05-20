@@ -188,6 +188,10 @@
                        android:value="true" />
         </activity>
 
+        <activity android:name=".slateos.SlateOSActivity"
+              android:label="SlateOS"
+              android:exported="true"/>
+
         <!-- Activity for launching deep link page in 2-pane. -->
         <activity android:name=".homepage.DeepLinkHomepageActivity"
                   android:label="@string/settings_label_launcher"
