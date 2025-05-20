@@ -35,7 +35,8 @@ public class SlateOSPreferenceController extends BasePreferenceController {
     public boolean handlePreferenceTreeClick(Preference preference) {
         if ("slateos_tile".equals(preference.getKey())) {
             Context context = preference.getContext();
-            Intent intent = new Intent(context, SlateOSActivity.class);
+            Intent intent = getIntent();
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Optional but useful in some settings contexts
             context.startActivity(intent);
             return true;
         }
