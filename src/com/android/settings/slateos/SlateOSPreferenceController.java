@@ -1,9 +1,8 @@
 package com.android.settings.slateos;
 
-import androidx.preference.Preference;
 import android.content.Context;
 import android.content.Intent;
-import android.os.UserHandle;
+import androidx.preference.Preference;
 import com.android.settings.core.BasePreferenceController;
 
 public class SlateOSPreferenceController extends BasePreferenceController {
@@ -19,27 +18,28 @@ public class SlateOSPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getTitle() {
-        return "SlateOS";
+        return "SlateOS"; // Preferably from strings.xml
     }
 
     @Override
     public CharSequence getSummary() {
-        return "Customize your experience";
+        return "Customize your experience"; // Preferably from strings.xml
     }
 
     @Override
     public Intent getIntent() {
         return new Intent().setClassName("com.android.settings", "com.android.settings.slateos.SlateOSActivity");
     }
+
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
         if ("slateos_tile".equals(preference.getKey())) {
             Context context = preference.getContext();
             Intent intent = getIntent();
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Optional but useful in some settings contexts
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // Optional but helpful in some contexts
             context.startActivity(intent);
             return true;
         }
-    return false;
+        return false;
     }
 }
