@@ -1,5 +1,6 @@
 package com.android.settings.slateos;
 
+import androidx.preference.Preference;
 import android.content.Context;
 import android.content.Intent;
 import android.os.UserHandle;
@@ -29,5 +30,15 @@ public class SlateOSPreferenceController extends BasePreferenceController {
     @Override
     public Intent getIntent() {
         return new Intent().setClassName("com.android.settings", "com.android.settings.slateos.SlateOSActivity");
+    }
+    @Override
+    public boolean handlePreferenceTreeClick(Preference preference) {
+        if ("slateos_tile".equals(preference.getKey())) {
+            Context context = preference.getContext();
+            Intent intent = new Intent(context, SlateOSActivity.class);
+            context.startActivity(intent);
+            return true;
+        }
+    return false;
     }
 }
