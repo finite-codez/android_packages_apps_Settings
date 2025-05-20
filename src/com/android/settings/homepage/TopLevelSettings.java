@@ -404,4 +404,11 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     return false;
                 }
             };
+
+     @Override
+     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new SlateOSPreferenceController(context, "slateos_tile"));
+        return controllers;
+     }
 }
