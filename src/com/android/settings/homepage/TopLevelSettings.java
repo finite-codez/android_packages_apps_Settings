@@ -57,6 +57,8 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.settings.slateos.SlateOSPreferenceController;
+
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
         PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
@@ -405,9 +407,9 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 }
             };
 
-     @Override
-     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
-        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+     protected List<BasePreferenceController> buildPreferenceControllers(Context context) {
+        List<BasePreferenceController> controllers = new ArrayList<>();
+        // add SlateOS menu
         controllers.add(new SlateOSPreferenceController(context, "slateos_tile"));
         return controllers;
      }
