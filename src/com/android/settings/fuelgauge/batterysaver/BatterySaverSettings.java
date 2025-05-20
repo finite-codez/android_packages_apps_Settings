@@ -41,6 +41,39 @@ public class BatterySaverSettings extends DashboardFragment {
     @Override
     public void onStart() {
         super.onStart();
+        final ContentResolver resolver = getContext().getContentResolver();
+
+        SwitchPreference idleSaverSwitch = findPreference("enable_idle_battery_saver");
+            if (idleSaverSwitch != null) {
+                idleSaverSwitch.setChecked(Settings.Global.getInt(resolver,
+                    "enable_idle_battery_saver", 0) == 1);
+
+            idleSaverSwitch.setOnPreferenceChangeListener((preference, newValue) -> {
+                boolean enabled = (Boolean) newValue;
+                Settings.Global.putInt(resolver, "enable_idle_battery_saver", enabled ? 1 : 0);
+                return true;
+            });
+        }
+
+        EditTextPreference timeoutPref = findPreference("idle_battery_saver_timeout_ms");
+            if (timeoutPref != null) {
+                int current = Settings.Global.getInt(resolver,
+                    "idle_battery_saver_timeout_ms", 3600000);
+                timeoutPref.setText(String.valueOf(current));
+
+                timeoutPref.setOnPreferenceChangeListener((preference, newValue) -> {
+                    try {
+                        int val = Integer.parseInt((String) newValue);
+                    if (val >= 0) {
+                        Settings.Global.putInt(resolver, "idle_battery_saver_timeout_ms", val);
+                        return true;
+                    }
+                } catch (NumberFormatException e) {
+                    // Ignore invalid input
+                }
+                return false;
+                });
+            }
         setupFooter();
     }
 
