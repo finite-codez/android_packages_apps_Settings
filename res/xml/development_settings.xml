@@ -623,9 +623,10 @@
             android:title="@string/hwui_force_dark_title"
             android:summary="@string/hwui_force_dark_summary" />
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:key="enable_blurs_on_windows"
-            android:title="@string/window_blurs"/>
+            android:title="@string/enable_blurs_on_windows_title"
+            android:summary="@string/enable_blurs_on_windows_summary" />
 
         <SwitchPreferenceCompat
             android:key="force_msaa"
