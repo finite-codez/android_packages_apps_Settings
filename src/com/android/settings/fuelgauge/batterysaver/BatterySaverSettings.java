@@ -41,6 +41,21 @@ public class BatterySaverSettings extends DashboardFragment {
     @Override
     public void onStart() {
         super.onStart();
+
+        SeekBarPreference timeoutSlider = findPreference("idle_battery_saver_timeout_slider");
+        if (timeoutSlider != null) {
+            int currentMs = Settings.Global.getInt(resolver,
+                "idle_battery_saver_timeout_ms", 3600000);
+            timeoutSlider.setValue(currentMs / 60000); // Convert to minutes
+
+        timeoutSlider.setOnPreferenceChangeListener((preference, newValue) -> {
+            int minutes = (Integer) newValue;
+            Settings.Global.putInt(resolver,
+                "idle_battery_saver_timeout_ms", minutes * 60000);
+            return true;
+    });
+}
+        
         final ContentResolver resolver = getContext().getContentResolver();
 
         SwitchPreference idleSaverSwitch = findPreference("enable_idle_battery_saver");
