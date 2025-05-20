@@ -11,5 +11,6 @@ public class SlateOSActivity extends FragmentActivity {
             .beginTransaction()
             .replace(android.R.id.content, new SlateOSFragment())
             .commit();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }
