@@ -218,6 +218,12 @@
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>
 
+        <SwitchPreferenceCompat
+            android:key="lock_screen_wallpaper_blur"
+            android:title="Blur lock screen wallpaper"
+            android:summary="Applies a soft blur effect to your lock screen background"
+            android:defaultValue="false" />
+
         <!-- Prevent accidental wake-up -->
         <lineageos.preference.LineageSystemSettingSwitchPreference
             android:key="proximity_on_wake"
