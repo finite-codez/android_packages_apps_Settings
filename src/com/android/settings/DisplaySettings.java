@@ -39,6 +39,8 @@ import com.android.settingslib.search.SearchIndexable;
 
 import lineageos.hardware.LineageHardwareManager;
 
+import com.android.settings.LockScreenWallpaperBlurPreferenceController; // Import Wallpaper Blur Settings
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -85,11 +87,13 @@ public class DisplaySettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new CameraGesturePreferenceController(context));
         controllers.add(new LiftToWakePreferenceController(context));
+        controllers.add(new LockScreenWallpaperBlurPreferenceController(context, LockScreenWallpaperBlurPreferenceController.KEY)); // Implement LockScreen Wallpaper Blur Setting
         controllers.add(new TapToWakePreferenceController(context));
         controllers.add(new VrDisplayPreferenceController(context));
         controllers.add(new ShowOperatorNamePreferenceController(context));
         controllers.add(new ThemePreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
+        
         return controllers;
     }
 
