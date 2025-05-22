@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="scheduled_grayscale_enabled"
+        android:title="@string/scheduled_grayscale_enable"
+        android:defaultValue="false" />
+
+    <TimePickerPreference
+        android:key="scheduled_grayscale_start_time"
+        android:title="@string/scheduled_grayscale_start_time"
+        android:defaultValue="21:00" />
+
+    <TimePickerPreference
+        android:key="scheduled_grayscale_end_time"
+        android:title="@string/scheduled_grayscale_end_time"
+        android:defaultValue="07:00" />
+
+    <SwitchPreferenceCompat
+        android:key="grayscale_24hour_mode"
+        android:title="@string/grayscale_24hour_mode"
+        android:summary="@string/grayscale_24hour_mode_summary"
+        android:defaultValue="false" />
+
+</PreferenceScreen>
