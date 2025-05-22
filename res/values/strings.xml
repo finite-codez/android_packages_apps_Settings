@@ -2890,6 +2890,16 @@
     <!-- Display settings screen, Color mode option for "Adaptive color"  [CHAR LIMIT=45] -->
     <string name="color_mode_option_automatic">Adaptive</string>
 
+    <string name="display_wellbeing">Wellbeing</string>
+    <string name="scheduled_grayscale_title">Scheduled Grayscale</string>
+    <string name="scheduled_grayscale_summary">Automatically enable grayscale at night</string>
+
+    <string name="scheduled_grayscale_enable">Enable Scheduled Grayscale</string>
+    <string name="scheduled_grayscale_start_time">Start Time</string>
+    <string name="scheduled_grayscale_end_time">End Time</string>
+    <string name="grayscale_24hour_mode">24-hour Grayscale Mode</string>
+    <string name="grayscale_24hour_mode_summary">Enable grayscale all day, disables scheduling</string>
+
     <!-- Key for the brightness level preference -->
     <string name="preference_key_brightness_level" translatable="false">brightness</string>
     <!-- Key for the auto brightness preference -->
