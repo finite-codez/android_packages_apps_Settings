@@ -375,6 +375,11 @@ public class Settings extends SettingsActivity {
         /* empty */
     }
 
+    public static final String SCHEDULED_GRAYSCALE_ENABLED = "scheduled_grayscale_enabled";
+    public static final String SCHEDULED_GRAYSCALE_START_TIME = "scheduled_grayscale_start_time"; // Format "HH:mm"
+    public static final String SCHEDULED_GRAYSCALE_END_TIME = "scheduled_grayscale_end_time";     // Format "HH:mm"
+    public static final String GRAYSCALE_24HOUR_MODE = "grayscale_24hour_mode";
+
     public static class CellularSecuritySettingsActivity extends SettingsActivity { /* empty */ }
     public static class SatelliteSettingActivity extends SettingsActivity { /* empty */ }
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
