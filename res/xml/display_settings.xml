@@ -127,6 +127,20 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="display_wellbeing"
+        android:title="@string/display_wellbeing"
+        android:order="-160">
+
+         <SwitchPreferenceCompat
+             android:key="scheduled_grayscale_enabled"
+             android:title="@string/scheduled_grayscale_title"
+             android:summary="@string/scheduled_grayscale_summary"
+             android:defaultValue="false"
+             android:widgetLayout="@layout/preference_widget_gear"
+             android:fragment="com.example.settings.GrayscaleScheduleSettingsFragment" />
+     </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/category_name_display_controls"
         android:order="-150">
 
