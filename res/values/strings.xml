@@ -4649,6 +4649,10 @@
     <!-- Summary text for the 'trackpad settings' page. [CHAR LIMIT=100] -->
     <string name="trackpad_settings_summary">Pointer speed, gestures</string>
 
+    <string name="echotap_title">EchoTap</string>
+    <string name="echotap_summary">Flip phone face down & triple tap to auto record audio</string>
+    <string name="gesture_category_title_audio">Audio Gestures</string>
+
     <!-- Title text for 'Tap to click'. [CHAR LIMIT=35] -->
     <string name="trackpad_tap_to_click">Tap to click</string>
     <!-- Title text for 'Tap dragging', a touchpad setting which allows dragging of UI elements by tapping the touchpad with a single finger and then moving it. [CHAR LIMIT=35] -->

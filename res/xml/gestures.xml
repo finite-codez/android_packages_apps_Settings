@@ -20,6 +20,19 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
+    <PreferenceCategory
+        android:title="@string/gesture_category_title_audio"
+        android:order="30">
+
+        <SwitchPreferenceCompat
+            android:key="echotap_enabled"
+            android:title="@string/echotap_title"
+            android:summary="@string/echotap_summary"
+            android:defaultValue="false"
+            android:widgetLayout="@layout/preference_widget_gear"
+            android:fragment="com.android.settings.gestures.EchoTapSettingsFragment" />
+    </PreferenceCategory>
+
     <lineageos.preference.LineagePartsPreference
         android:key="touchscreen_gesture_settings"
         settings:requiresFeature="lineagehardware:FEATURE_TOUCHSCREEN_GESTURES" />
